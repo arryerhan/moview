@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 :root{
     --main-color: #0f171e;
     --assistant-color: #1a242e;
-    --text-color:#fff;
-}
+    --text-color:#fff;}
 body{
     font-family: "Poppins", sans-serif;
-    background-color: var(--main-color);
-}
-
+    background-color: var(--main-color);}
 header{
     background-color: var(--assistant-color);
     padding: 1rem;
@@ -24,14 +19,10 @@ header{
     margin-bottom: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
-}
-
+    z-index: 10;}
 header h1{
     letter-spacing: 5px;
-    color:var(--text-color);
-}
-
+    color:var(--text-color);}
 .search{
     background-color: var(--main-color);
     border: 0;
@@ -42,33 +33,23 @@ header h1{
     padding: 0.5rem 1rem;
     margin-left: 0.5rem;
     width: 100%;
-    transition:transform 0.3s ease-in-out;
-}
-
+    transition:transform 0.3s ease-in-out;}
 .search:focus{
-    scale: 1.025;
-}
-
+    scale: 1.025;}
 .search::placeholder{
     color:#6c757d;
-    text-indent: 1rem;
-}
-
+    text-indent: 1rem;}
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0 3rem;
-}
-
+    padding: 0 3rem;}
 .movie-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease-in-out;
-    
-}
+    transition: transform 0.3s ease-in-out;}
 .movie{
     width: 300px;
     margin: 1rem 0;
@@ -77,48 +58,31 @@ main{
     position: relative;
     border-radius:10px;
     border: .5px solid rgb(53, 51, 51);
-    overflow: hidden;
-}
-
+    overflow: hidden;}
 @media (max-width:563px){
     .movie{
         width: 70%;
-        margin-bottom:2rem;
-    }
-}
-
+        margin-bottom:2rem;}}
 .movie img{
     width: 100%;
-    height: 300px;
-}
-
+    height: 300px;}
 .movie-info{
     color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    letter-spacing: 0.5px;
-}
-
+    letter-spacing: 0.5px;}
 .movie-info span{
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
-    font-weight: bold;
-}
-
+    font-weight: bold;}
 .movie-info span.green{
-    color:green;
-}
-
+    color:green;}
 .movie-info span.orange{
-    color:orange;
-}
-
+    color:orange;}
 .movie-info span.red{
-    color:red;
-}
-
+    color:red;}
 .overview{
     background-color:var(--assistant-color);
     color:var(--text-color);
@@ -130,27 +94,18 @@ main{
     max-height:50%;
     transform: translateY(101%);
     overflow-y: auto;
-    transition: all 0.5s ease-in;
-}
-
+    transition: all 0.5s ease-in;}
 .movie:hover .overview{
-    transform: translateY(0);
-}
-
+    transform: translateY(0);}
 .overview h3{
     margin-bottom: 0.5rem;
     border-bottom: 1px solid var(--text-color);
     width: 100%;
-    white-space: nowrap;
-}
-
+    white-space: nowrap;}
 .overview small{
     display: block;
     font-size: 12px;
-    margin-bottom: 0.5rem;
-}
-
-
+    margin-bottom: 0.5rem;}
 footer{
     background-color: var(--assistant-color);
     display: flex;
@@ -159,30 +114,21 @@ footer{
     align-items: center;
     text-align: center;
     padding: 1rem;
-    margin-top: 1rem;
-}
-
+    margin-top: 1rem;}
 footer h3{
     letter-spacing: 5px;
     color: var(--text-color);
-    margin-bottom: 0.5rem;
-}
-
+    margin-bottom: 0.5rem;}
 footer ul li{
     list-style: none;
     display: block;
     margin-right: 1rem;
-    color:var(--text-color);
-}
-
+    color:var(--text-color);}
 footer ul li a{
     color: #2066a0;
     text-decoration: none;
-    font-size: 0.9rem;
-}
-
+    font-size: 0.9rem;}
 footer small{
     margin-top: 1rem;
     color: #8197a4;
-    font-size: 0.8rem;
-}
+    font-size: 0.8rem;}
